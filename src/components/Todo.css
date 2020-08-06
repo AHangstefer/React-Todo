@@ -1,0 +1,70 @@
+
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color:rgb(29, 20, 20);
+}
+
+.Header{
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.all-items{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.list-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2%;
+}
+
+.item{
+    background-color: rgb(19, 77, 100);
+    display: flex;
+    justify-content: center;
+    border: .2rem rgb(26, 80, 77) solid;
+    width: 25rem;
+    margin: 1%;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    
+
+}
+
+.item.completed{
+    background-color: rgb(175, 99, 73);
+    border-color: rgb(160, 89, 65);
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    height:2rem;
+    width: 50%;
+    font-size: 1rem;
+    font-weight: bold;
+    color:rgb(29, 20, 20);
+    border-radius: 2rem;
+    
+}
+
+.add{
+    height: 2rem;
+    width: 5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color:rgb(29, 20, 20);
+    border-radius: 2rem; 
+}
+
+

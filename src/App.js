@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDom from "react-dom";
 import TodoList from "./components/TodoList";
 import TodoForm from "./components/TodoForm";
-//import "./Todo.css"
+import Todo from "./components/Todo.css"
 
 const list = [
   {
@@ -55,6 +55,17 @@ class App extends React.Component {
     });
   };
 
+  didIt = item => {
+    const didItList = {
+      name: item,
+      id: Date.now(),
+      completed: false
+    }
+    this.setState({
+      list: [...this.state.list, didItList]
+    });
+  };
+
 
   // design `App` to be the parent component of your application.
   // this component is going to take care of state, and any change
@@ -64,12 +75,13 @@ class App extends React.Component {
   render() {
     return (
       <div className= "App">
-        <h2 className = "Header">Welcome to your Todo App!</h2>
+        <h2 className = "Header">Today's List </h2>
         <TodoForm addItem = {this.addItem} />
         <TodoList
           list= {this.state.list}
           toggleItem = {this.toggleItem}
           clearDone = {this.clearDone}
+          didIt = {this.didIt}
         />
       </div>
     );
