@@ -41,6 +41,7 @@
 .item.completed{
     background-color: rgb(175, 99, 73);
     border-color: rgb(160, 89, 65);
+    text-decoration: line-through;
 }
 
 .btn{
