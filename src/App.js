@@ -55,16 +55,16 @@ class App extends React.Component {
     });
   };
 
-  didIt = item => {
-    const didItList = {
-      name: item,
-      id: Date.now(),
-      completed: false
-    }
-    this.setState({
-      list: [...this.state.list, didItList]
-    });
-  };
+  // didIt = item => {
+  //   const didItList = {
+  //     name: item,
+  //     id: Date.now(),
+  //     completed: false
+  //   }
+  //   this.setState({
+  //     list: [...this.state.list, didItList]
+  //   });
+  // };
 
 
   // design `App` to be the parent component of your application.
@@ -81,7 +81,7 @@ class App extends React.Component {
           list= {this.state.list}
           toggleItem = {this.toggleItem}
           clearDone = {this.clearDone}
-          didIt = {this.didIt}
+          // didIt = {this.didIt}
         />
       </div>
     );
